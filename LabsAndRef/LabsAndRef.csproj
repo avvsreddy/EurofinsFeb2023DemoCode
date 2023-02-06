@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Labs\PLT\PLT_Programs.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Labs\PLT\PLT1.txt" />
