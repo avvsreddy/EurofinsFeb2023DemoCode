@@ -1,0 +1,2 @@
+﻿Write a C# code to display the 1st , 2nd , and 4th multiple of 7 
+which gives the remainder 1 when divided by 2,3,4,5 and 6
