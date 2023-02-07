@@ -49,6 +49,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Labs\PLT\PLT_Programs.pdf" />
+    <None Include="Training Calendar\SkillAssure - Fresher Induction .NET- Program Design_v1.1 -  Feb 2023.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Labs\PLT\PLT1.txt" />
