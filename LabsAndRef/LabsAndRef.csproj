@@ -50,6 +50,7 @@
     <None Include="App.config" />
     <None Include="Labs\Games\Number Puzzle Game-Problem.zip" />
     <None Include="Labs\PLT\PLT_Programs.pdf" />
+    <None Include="Labs\PLT\PLT_ProgramsSolutions.pdf" />
     <None Include="Ref\C# Programming Ref Notes and Labs- Venkat.pdf" />
     <None Include="Ref\Introduction to dotNET Framework.pdf" />
     <None Include="Training Calendar\SkillAssure - Fresher Induction .NET- Program Design_v1.1 -  Feb 2023.xlsx" />
