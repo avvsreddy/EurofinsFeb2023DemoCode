@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Labs\Games\Number Puzzle Game-Problem.zip" />
     <None Include="Labs\PLT\PLT_Programs.pdf" />
     <None Include="Training Calendar\SkillAssure - Fresher Induction .NET- Program Design_v1.1 -  Feb 2023.xlsx" />
   </ItemGroup>
