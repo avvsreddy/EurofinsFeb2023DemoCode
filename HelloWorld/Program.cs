@@ -1,14 +1,20 @@
-﻿using System;
-
-namespace HelloWorld
+﻿namespace HelloWorld
 {
     internal class Program
     {
-        public string PersonName;
+
         static void Main(string[] args)
         {
-            string personName = "sdfsdfsd";
-            Console.WriteLine("Hello World!");
+            M1();
+            M1();
+        }
+
+        public static void M1()
+        {
+            int a;
+            a = 10;
+            string str;
+            str = "Hello World!";
         }
     }
 }
