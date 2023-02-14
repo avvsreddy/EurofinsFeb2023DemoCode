@@ -57,6 +57,7 @@
     <None Include="Ref\C# Programming Ref Notes and Labs- Venkat.pdf" />
     <None Include="Ref\Introduction to dotNET Framework.pdf" />
     <None Include="Ref\Unit 1 - Introduction to Object Oriented Approach.pdf" />
+    <None Include="Ref\Unit 2 - Object Oriented Programming Concepts.pdf" />
     <None Include="Training Calendar\SkillAssure - Fresher Induction .NET- Program Design_v1.1 -  Feb 2023.xlsx" />
   </ItemGroup>
   <ItemGroup>
