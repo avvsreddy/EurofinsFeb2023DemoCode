@@ -71,13 +71,8 @@ namespace CompanyOrdersApp
     {
         public override double GetTotalWorth()
         {
-            double total = 0;
-            // for each order
-            foreach (Order order in Orders)
-            {
-                total += order.GetTotalWorth();
-            }
-            return total - SplDiscount;
+
+            return base.GetTotalWorth() - SplDiscount;
         }
         public double SplDiscount { get; set; }
     }
