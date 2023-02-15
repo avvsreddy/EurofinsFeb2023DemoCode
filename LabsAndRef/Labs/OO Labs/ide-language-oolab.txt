@@ -1,0 +1,11 @@
+Design and Program the classes based on the following requirements.
+
+An IDE supports different types of Programming Languages like C#, C and Java. All the programming languages have the following methods used by the IDE to support adding elements:
+1. getUnit() which returns a string
+2. getParadigm() which returns a string
+3. getName() which returns a string
+The getUnit() methods returns the string "Class" or "Function" depending on whether the language is Object Oriented or Procedural.
+The getParadigm() methods returns the string "ObjectOriented" or "Procedural" depending on whether the language is Object Oriented or Procedural.
+The getName() method returns the name of the language. These methods are used to design the support for the languages in an IDE.
+
+Note: Avoid code duplication
