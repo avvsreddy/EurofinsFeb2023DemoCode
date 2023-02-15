@@ -10,7 +10,7 @@ namespace OOCode4
 
             MyMathApp app = new MyMathApp();
             app.Calculator = new SimpleCalculator();
-            app.Sum(23, 34, 45, 34, 34, 45, 5656);
+            app.FindSum(23, 34, 45, 34, 34, 45, 5656);
 
         }
     }
@@ -43,7 +43,7 @@ namespace OOCode4
         }
     }
 
-    class MyMathApp : ICalculator
+    class MyMathApp// : ICalculator
     {
         //public int FindSum(int[] numbers) 
         //{
@@ -51,7 +51,7 @@ namespace OOCode4
         //    return sc.Sum(numbers);
         //}
         public ICalculator Calculator { get; set; }
-        public int Sum(params int[] numbers)
+        public int FindSum(params int[] numbers)
         {
             //SimpleCalculator sc = new SimpleCalculator();
             return Calculator.Sum(numbers);
