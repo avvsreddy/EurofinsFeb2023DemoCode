@@ -51,12 +51,12 @@ namespace ide_languageApp
         }
     }
 
-    class LangJava : ILanguage
+
+    abstract class OOLanguage : ILanguage
     {
-        public string GetName()
-        {
-            return "Java";
-        }
+        public abstract string GetName();
+
+
         public string GetUnit()
         {
             return "Class";
@@ -66,27 +66,11 @@ namespace ide_languageApp
             return "Object Oriented";
         }
     }
-    class LangCSharp : ILanguage
+
+    abstract class ProcLanguage : ILanguage
     {
-        public string GetName()
-        {
-            return "CSharp";
-        }
-        public string GetUnit()
-        {
-            return "Class";
-        }
-        public string GetParadigm()
-        {
-            return "Object Oriented";
-        }
-    }
-    class LangC : ILanguage
-    {
-        public string GetName()
-        {
-            return "C Language";
-        }
+        public abstract string GetName();
+
         public string GetUnit()
         {
             return "Function";
@@ -95,5 +79,31 @@ namespace ide_languageApp
         {
             return "Procedural Oriented";
         }
+
+    }
+
+    class LangJava : OOLanguage
+    {
+        public override string GetName()
+        {
+            return "Java";
+        }
+
+    }
+    class LangCSharp : OOLanguage
+    {
+        public override string GetName()
+        {
+            return "CSharp";
+        }
+
+    }
+    class LangC : ProcLanguage
+    {
+        public override string GetName()
+        {
+            return "C Language";
+        }
+
     }
 }
