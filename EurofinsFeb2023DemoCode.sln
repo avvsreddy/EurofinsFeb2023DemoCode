@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OODemo2", "OODemo2\OODemo2.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ide-languageApp", "ide-languageApp\ide-languageApp.csproj", "{F5B577D2-C631-4B26-9697-BE2599479ACA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOCode4", "OOCode4\OOCode4.csproj", "{48639159-5DAF-4332-9AE9-9A4DD5B7E448}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{F5B577D2-C631-4B26-9697-BE2599479ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5B577D2-C631-4B26-9697-BE2599479ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5B577D2-C631-4B26-9697-BE2599479ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48639159-5DAF-4332-9AE9-9A4DD5B7E448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48639159-5DAF-4332-9AE9-9A4DD5B7E448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48639159-5DAF-4332-9AE9-9A4DD5B7E448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48639159-5DAF-4332-9AE9-9A4DD5B7E448}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +105,7 @@ Global
 		{FC63D8B9-1932-45C6-AAE9-08925F85F4E2} = {69CAA88D-CA36-4CBB-AF4C-886C54C74957}
 		{252C67B7-3E62-4F7C-A262-1CFCF29B6EE8} = {69CAA88D-CA36-4CBB-AF4C-886C54C74957}
 		{F5B577D2-C631-4B26-9697-BE2599479ACA} = {69CAA88D-CA36-4CBB-AF4C-886C54C74957}
+		{48639159-5DAF-4332-9AE9-9A4DD5B7E448} = {69CAA88D-CA36-4CBB-AF4C-886C54C74957}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FE45911-3EF7-4206-9B62-38E4C8ACA190}
