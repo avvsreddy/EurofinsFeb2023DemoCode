@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsDemo1", "Collect
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicCollectionsDemo1", "DynamicCollectionsDemo1\DynamicCollectionsDemo1.csproj", "{710085E4-ECCE-4E91-93AA-010114127BD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsDemo3", "CollectionsDemo3\CollectionsDemo3.csproj", "{5731A003-087A-4BFE-AA29-F822CB3BC2C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{710085E4-ECCE-4E91-93AA-010114127BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{710085E4-ECCE-4E91-93AA-010114127BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{710085E4-ECCE-4E91-93AA-010114127BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5731A003-087A-4BFE-AA29-F822CB3BC2C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5731A003-087A-4BFE-AA29-F822CB3BC2C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5731A003-087A-4BFE-AA29-F822CB3BC2C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5731A003-087A-4BFE-AA29-F822CB3BC2C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +128,7 @@ Global
 		{48639159-5DAF-4332-9AE9-9A4DD5B7E448} = {69CAA88D-CA36-4CBB-AF4C-886C54C74957}
 		{121A4452-B140-410D-A835-A3321B52F2C7} = {8C0CB7FC-12FF-4C2C-9907-901B99C7864F}
 		{710085E4-ECCE-4E91-93AA-010114127BD2} = {8C0CB7FC-12FF-4C2C-9907-901B99C7864F}
+		{5731A003-087A-4BFE-AA29-F822CB3BC2C1} = {8C0CB7FC-12FF-4C2C-9907-901B99C7864F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FE45911-3EF7-4206-9B62-38E4C8ACA190}

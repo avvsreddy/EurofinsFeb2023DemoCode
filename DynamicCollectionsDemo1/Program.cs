@@ -8,6 +8,8 @@ namespace DynamicCollectionsDemo1
         {
             // want to store n number of ints and get back
             DynamicIntArray numbers = new DynamicIntArray();
+            DynamicDoubleArray doubles = new DynamicDoubleArray();
+            DynamicArray<int> ints = new DynamicArray<int>();
             //numbers.Add(10);
             //numbers.Add(20);
             //numbers.Add(30);
@@ -15,12 +17,12 @@ namespace DynamicCollectionsDemo1
 
             for (int i = 1; i <= 10000; i++)
             {
-                numbers.Add(i);
+                ints.Add(i);
             }
 
-            for (int i = 0; i < numbers.Size; i++)
+            for (int i = 0; i < ints.Size; i++)
             {
-                Console.WriteLine(numbers.Get(i));
+                Console.WriteLine(ints.Get(i));
             }
         }
     }
@@ -34,9 +36,9 @@ namespace DynamicCollectionsDemo1
 
         }
 
-        private int[] numbers = new int[10];
+        private object[] numbers = new object[10];
         private int index = 0;
-        internal void Add(int v)
+        internal void Add(object v)
         {
             // check the empty space
             if (index < numbers.Length)
@@ -45,12 +47,15 @@ namespace DynamicCollectionsDemo1
             }
             else // not empty
             {
-                int[] temp = new int[numbers.Length * 2];
-                for (int i = 0; i < numbers.Length; i++)
-                {
-                    temp[i] = numbers[i];
-                }
-                numbers = temp;
+                //int[] temp = new int[numbers.Length * 2];
+                //for (int i = 0; i < numbers.Length; i++)
+                //{
+                //    temp[i] = numbers[i];
+                //}
+                //Array.Copy(numbers,temp, numbers.Length);
+                //numbers = temp;
+
+                Array.Resize(ref numbers, numbers.Length * 2);
                 numbers[index++] = v;
             }
 
@@ -61,4 +66,84 @@ namespace DynamicCollectionsDemo1
             return numbers[i];
         }
     }
+
+    class DynamicDoubleArray
+    {
+        public int Size
+        {
+            get { return index; }
+
+        }
+
+        private double[] numbers = new double[10];
+        private int index = 0;
+        internal void Add(double v)
+        {
+            // check the empty space
+            if (index < numbers.Length)
+            {
+                numbers[index++] = v;
+            }
+            else // not empty
+            {
+                //int[] temp = new int[numbers.Length * 2];
+                //for (int i = 0; i < numbers.Length; i++)
+                //{
+                //    temp[i] = numbers[i];
+                //}
+                //Array.Copy(numbers,temp, numbers.Length);
+                //numbers = temp;
+
+                Array.Resize(ref numbers, numbers.Length * 2);
+                numbers[index++] = v;
+            }
+
+        }
+
+        internal double Get(int i)
+        {
+            return numbers[i];
+        }
+    }
+
+    class DynamicArray<T>
+    {
+        public int Size
+        {
+            get { return index; }
+
+        }
+
+        private T[] numbers = new T[10];
+        private int index = 0;
+        internal void Add(T v)
+        {
+            // check the empty space
+            if (index < numbers.Length)
+            {
+                numbers[index++] = v;
+            }
+            else // not empty
+            {
+                //int[] temp = new int[numbers.Length * 2];
+                //for (int i = 0; i < numbers.Length; i++)
+                //{
+                //    temp[i] = numbers[i];
+                //}
+                //Array.Copy(numbers,temp, numbers.Length);
+                //numbers = temp;
+
+                Array.Resize(ref numbers, numbers.Length * 2);
+                numbers[index++] = v;
+            }
+
+        }
+
+        internal T Get(int i)
+        {
+            return numbers[i];
+        }
+    }
+
+
 }
