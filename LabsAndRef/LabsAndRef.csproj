@@ -56,6 +56,7 @@
     <None Include="Labs\OO Labs\OO LABS to Participants.zip" />
     <None Include="Labs\OO Labs\OO Programming - Company.pdf" />
     <None Include="Labs\OO Labs\OOP Exercises.pdf" />
+    <None Include="Labs\OO Labs\POS - Case Study.doc" />
     <None Include="Labs\OO Labs\SkillAssure Assessment Framework-OO Programming.pdf" />
     <None Include="Labs\PLT\PLT_Programs.pdf" />
     <None Include="Labs\PLT\PLT_ProgramsSolutions.pdf" />
@@ -67,6 +68,7 @@
     <None Include="Training Calendar\SkillAssure - Fresher Induction .NET- Program Design_v1.1 -  Feb 2023.xlsx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Labs\OO Labs\04-MembershipApp.jpg" />
     <Content Include="Labs\OO Labs\ide-language-oolab.txt" />
     <Content Include="Labs\PLT\PLT1.txt" />
   </ItemGroup>
