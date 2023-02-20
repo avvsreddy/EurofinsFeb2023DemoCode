@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicCollectionsDemo1", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsDemo3", "CollectionsDemo3\CollectionsDemo3.csproj", "{5731A003-087A-4BFE-AA29-F822CB3BC2C1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exceptions Handling Demos", "Exceptions Handling Demos", "{F9DAFDAA-FAF1-4137-8417-7CDBF59A170B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsDemo1", "ExceptionsDemo1\ExceptionsDemo1.csproj", "{EAD6C918-640B-4073-B834-4893D29FF366}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +113,10 @@ Global
 		{5731A003-087A-4BFE-AA29-F822CB3BC2C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5731A003-087A-4BFE-AA29-F822CB3BC2C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5731A003-087A-4BFE-AA29-F822CB3BC2C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD6C918-640B-4073-B834-4893D29FF366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD6C918-640B-4073-B834-4893D29FF366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD6C918-640B-4073-B834-4893D29FF366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD6C918-640B-4073-B834-4893D29FF366}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +137,7 @@ Global
 		{121A4452-B140-410D-A835-A3321B52F2C7} = {8C0CB7FC-12FF-4C2C-9907-901B99C7864F}
 		{710085E4-ECCE-4E91-93AA-010114127BD2} = {8C0CB7FC-12FF-4C2C-9907-901B99C7864F}
 		{5731A003-087A-4BFE-AA29-F822CB3BC2C1} = {8C0CB7FC-12FF-4C2C-9907-901B99C7864F}
+		{EAD6C918-640B-4073-B834-4893D29FF366} = {F9DAFDAA-FAF1-4137-8417-7CDBF59A170B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FE45911-3EF7-4206-9B62-38E4C8ACA190}

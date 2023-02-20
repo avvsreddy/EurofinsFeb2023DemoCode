@@ -63,7 +63,7 @@ namespace DynamicCollectionsDemo1
 
         internal int Get(int i)
         {
-            return numbers[i];
+            return (int)numbers[i];
         }
     }
 
