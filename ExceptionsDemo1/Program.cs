@@ -52,7 +52,9 @@ namespace ExceptionsDemo1
                 {
                     // always exe
                     // close db
+                    Console.WriteLine("in finally");
                 }
+                Console.WriteLine("outside try...");
             }
 
         }
