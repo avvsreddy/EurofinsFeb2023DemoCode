@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NLog;
+using System;
+using System.IO;
 
 namespace ExceptionsDemo1
 {
@@ -13,14 +15,17 @@ namespace ExceptionsDemo1
             {
                 try
                 {
+                    // open db connection
                     System.Console.Write("Enter first number: ");
                     fno = int.Parse(Console.ReadLine());
                     Console.Write("Enter second number: ");
                     sno = int.Parse(Console.ReadLine());
-
+                    // save data into db
                     sum = Calculator.Sum(fno, sno);
 
                     Console.WriteLine($"The sum of {fno} and {sno} is {sum}");
+                    // close db connection
+
                 }
                 catch (FormatException ex)
                 {
@@ -30,15 +35,24 @@ namespace ExceptionsDemo1
                 {
                     Console.WriteLine("Enter small numbers");
                 }
-                //catch (NegativeNumberException ex)
-                //{
-                //    Console.WriteLine("Enter positive numbers only");
-                //}
+                catch (NegativeNumberException ex)
+                {
+                    Console.WriteLine("Enter positive numbers only");
+                }
                 catch (Exception ex) // catch all
                 {
                     Console.WriteLine(ex.Message);
+                    if (ex.InnerException != null)
+                    {
+                        Console.WriteLine(ex.InnerException.Message);
+                    }
                 }
-
+                //sdfsdfsdf
+                finally
+                {
+                    // always exe
+                    // close db
+                }
             }
 
         }
@@ -71,15 +85,36 @@ namespace ExceptionsDemo1
             try
             {
                 InputValidator.Validate(a, b);
+
             }
             catch (Exception ex)
             {
                 //Console.WriteLine(ex.Message);
                 // log the ex
-
-
+                LogManager.LoadConfiguration("nlog.config");
+                var log = LogManager.GetCurrentClassLogger();
+                //log.Debug("Starting up");
+                log.Error(ex.Message);
 
                 throw ex;
+            }
+
+            int sum = a + b;
+            // save 
+            try
+            {
+
+
+                CalculatorRepository.Save($"{a}+{b}={sum}");
+            }
+            catch (Exception ex)
+            {
+                // convert sys exp into custome exp and rethrow
+                //UnableToSaveException exp1 = new UnableToSaveException();
+                UnableToSaveException exp2 = new UnableToSaveException("sdfsdf");
+                //UnableToSaveException exp = new UnableToSaveException("Unable to save the calculator input", ex);
+                throw exp2;
+
             }
             return a + b;
 
@@ -99,6 +134,22 @@ namespace ExceptionsDemo1
         }
     }
 
+    public class UnableToSaveException : ApplicationException
+    {
+        //public UnableToSaveException()
+        //{
+
+        //}
+        //public UnableToSaveException(string msg) : base(msg)
+        //{
+
+        //}
+        public UnableToSaveException(string msg = null, Exception innerException = null) : base(msg, innerException)
+        {
+
+        }
+    }
+
     public class InputValidator
     {
         /// <summary>
@@ -113,11 +164,19 @@ namespace ExceptionsDemo1
             // only +ve
             if (a < 0 || b < 0)
             {
-                NegativeNumberException exception = new NegativeNumberException("Enter only positive numbers");
+                NegativeNumberException exception = new NegativeNumberException("Enter only positive numbers...");
                 //exception.Message = "";
                 throw exception;
             }
             return true;
+        }
+    }
+
+    public class CalculatorRepository // DAL
+    {
+        public static void Save(string input)
+        {
+            File.WriteAllText("x://calculator.txt", input);
         }
     }
 }
