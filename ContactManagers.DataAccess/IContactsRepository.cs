@@ -10,7 +10,7 @@ namespace ContactManagers.DataAccess
         void Edit(int id, Contact contactToEdit);
         Contact GetContact(int id);
         List<Contact> GetAll();
-        List<Contact> GetContactsByLocation();
+        List<Contact> GetContactsByLocation(string location);
 
 
 
