@@ -1,0 +1,21 @@
+An Account has accno, name, balance, pin number, isActive openingDate and 
+closingDate properties
+
+AccountManager should manage the accounts for opening, closing, withdraw, 
+deposits and transfer
+
+An account can open and or  close only once. else it should throw an 
+approriate exceptions. If it's success, openDate and or Closed Date should update.
+
+Account should not be closed if it's not openned and if it's have a balance 
+more than zero.
+
+Withdraw and Deposits can hapen on only openned accounts
+
+We can reduce the balance with withdraw only when account has sufficient 
+balance and pincode matches, else it should throw an exception
+
+We can increase the balance with Deposit.
+
+Transfer of funds can happen between any two active accounts, else it should
+throw an exception

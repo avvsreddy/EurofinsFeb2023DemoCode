@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D3F7187D-BAD2-475D-AE39-6D46CAE21A69}</ProjectGuid>
+    <ProjectGuid>{CA0B6F6D-BBA2-4625-8F0C-7B4A5064DC1E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LabsAndRef</RootNamespace>
-    <AssemblyName>LabsAndRef</AssemblyName>
+    <RootNamespace>LambdasDemo1</RootNamespace>
+    <AssemblyName>LambdasDemo1</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,35 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Labs\Collections\Collection Exercises.pdf" />
-    <None Include="Labs\Collections\Computer Kiosk Application Project Requirements.pdf" />
-    <None Include="Labs\Delegates\Lab-Delegates.pdf" />
-    <None Include="Labs\Exceptions\10 - Lab - Exceptions.pdf" />
-    <None Include="Labs\Exceptions\12-Exceptions Exercise.doc" />
-    <None Include="Labs\Games\Number Puzzle Game-Problem.zip" />
-    <None Include="Labs\OO Design\OODesignExercise1-Venkat.pdf" />
-    <None Include="Labs\OO Labs\Bank Interest Calculator System - Case Study - Venkat.docx" />
-    <None Include="Labs\OO Labs\OO LABS to Participants.zip" />
-    <None Include="Labs\OO Labs\OO Programming - Company.pdf" />
-    <None Include="Labs\OO Labs\OOP Exercises.pdf" />
-    <None Include="Labs\OO Labs\POS - Case Study.doc" />
-    <None Include="Labs\OO Labs\SkillAssure Assessment Framework-OO Programming.pdf" />
-    <None Include="Labs\PLT\PLT_Programs.pdf" />
-    <None Include="Labs\PLT\PLT_ProgramsSolutions.pdf" />
-    <None Include="Ref\C# Programming Ref Notes and Labs- Venkat.pdf" />
-    <None Include="Ref\Exception Handling - Ref.pdf" />
-    <None Include="Ref\Introduction to dotNET Framework.pdf" />
-    <None Include="Ref\Unit 1 - Introduction to Object Oriented Approach.pdf" />
-    <None Include="Ref\Unit 2 - Object Oriented Programming Concepts.pdf" />
-    <None Include="Ref\Unit 3 - Thinking in Objects.pdf" />
-    <None Include="Training Calendar\SkillAssure - Fresher Induction .NET- Program Design_v1.1 -  Feb 2023.xlsx" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Labs\Exceptions\BankAppProblem.txt" />
-    <Content Include="Labs\OO Labs\04-MembershipApp.jpg" />
-    <Content Include="Labs\OO Labs\ide-language-oolab.txt" />
-    <Content Include="Labs\PLT\PLT1.txt" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
