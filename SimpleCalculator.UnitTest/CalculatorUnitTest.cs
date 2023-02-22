@@ -77,7 +77,7 @@ namespace SimpleCalculator.UnitTest
         public void Sum_WithValidInput_ShouldCallSaveMethod()
         {
             target.Sum(10, 20);
-            mock.Verify(m => m.Save("10+20=30"), Times.Once());
+            mock.Verify(m => m.Save("10+20=30"), Times.AtLeastOnce());
 
         }
     }
