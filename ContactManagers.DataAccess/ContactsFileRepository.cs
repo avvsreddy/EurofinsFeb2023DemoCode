@@ -26,7 +26,7 @@ namespace ContactManagers.DataAccess
             throw new NotImplementedException();
         }
 
-        public List<Contact> GetContactsByLocation()
+        public List<Contact> GetContactsByLocation(string location)
         {
             throw new NotImplementedException();
         }
