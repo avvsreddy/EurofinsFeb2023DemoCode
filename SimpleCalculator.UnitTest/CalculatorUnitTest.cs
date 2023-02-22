@@ -25,7 +25,7 @@ namespace SimpleCalculator.UnitTest
         {
             //ICalculatorRepo mock = new MockCalculatorRepo();
             mock = new Mock<ICalculatorRepo>();
-            mock.Setup(m => m.Save("10+20=30")).Returns(true);
+            mock.Setup(m => m.Save(string.Empty)).Returns(true);
 
             target = new Calculator(mock.Object);
         }

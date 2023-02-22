@@ -65,6 +65,7 @@
     <None Include="Labs\PLT\PLT_Programs.pdf" />
     <None Include="Labs\PLT\PLT_ProgramsSolutions.pdf" />
     <None Include="Project\Online Dispatch Management Tool.zip" />
+    <None Include="Ref\Azure-Quick-Start-for-NET-Developers.pdf" />
     <None Include="Ref\C# Programming Ref Notes and Labs- Venkat.pdf" />
     <None Include="Ref\Exception Handling - Ref.pdf" />
     <None Include="Ref\Introduction to dotNET Framework.pdf" />
@@ -72,6 +73,7 @@
     <None Include="Ref\Unit 1 - Introduction to Object Oriented Approach.pdf" />
     <None Include="Ref\Unit 2 - Object Oriented Programming Concepts.pdf" />
     <None Include="Ref\Unit 3 - Thinking in Objects.pdf" />
+    <None Include="Ref\UnitTesting_Presentation.pdf" />
     <None Include="Training Calendar\SkillAssure - Fresher Induction .NET- Program Design_v1.1 -  Feb 2023.xlsx" />
   </ItemGroup>
   <ItemGroup>
