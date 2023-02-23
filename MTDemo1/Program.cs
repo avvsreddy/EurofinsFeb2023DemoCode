@@ -7,8 +7,13 @@ namespace MTDemo1
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
+            Console.WriteLine($"Processors count: {Environment.ProcessorCount}");
+            M3();
+            return 0;
+
+
             Console.WriteLine($"Main: {Thread.CurrentThread.ManagedThreadId}");
             Console.WriteLine("Running seq...");
             Stopwatch sw = Stopwatch.StartNew();
@@ -84,6 +89,16 @@ namespace MTDemo1
             Parallel.For(1, 11, delegate (int i)
             {
                 Thread.Sleep(500);
+            });
+
+
+        }
+
+        static void M3()
+        {
+            Parallel.For(1, 101, delegate (int i)
+            {
+                Console.WriteLine($"Thread ID :{Thread.CurrentThread.ManagedThreadId}");
             });
         }
     }
