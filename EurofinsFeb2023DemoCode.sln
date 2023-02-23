@@ -79,6 +79,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator.UnitTest",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator.DataAccess", "SimpleCalculator.DataAccess\SimpleCalculator.DataAccess.csproj", "{A77FDC8C-871F-4763-B037-C08D2E2B42CA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Threading Demos", "Threading Demos", "{2536D24C-BC80-41E1-A04E-B9357C122A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTDemo1", "MTDemo1\MTDemo1.csproj", "{33D52A6D-3CAA-4A0A-9730-4DF0A3333D86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +193,10 @@ Global
 		{A77FDC8C-871F-4763-B037-C08D2E2B42CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A77FDC8C-871F-4763-B037-C08D2E2B42CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A77FDC8C-871F-4763-B037-C08D2E2B42CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33D52A6D-3CAA-4A0A-9730-4DF0A3333D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33D52A6D-3CAA-4A0A-9730-4DF0A3333D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33D52A6D-3CAA-4A0A-9730-4DF0A3333D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33D52A6D-3CAA-4A0A-9730-4DF0A3333D86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -222,6 +230,7 @@ Global
 		{0D37D141-116C-4331-AF08-11E77F72EAED} = {E1F374D4-3FAC-4D04-AFC4-00A1AEACFF86}
 		{5F5F5A11-EEBE-48B3-A7CF-9EE1D379F809} = {E1F374D4-3FAC-4D04-AFC4-00A1AEACFF86}
 		{A77FDC8C-871F-4763-B037-C08D2E2B42CA} = {E1F374D4-3FAC-4D04-AFC4-00A1AEACFF86}
+		{33D52A6D-3CAA-4A0A-9730-4DF0A3333D86} = {2536D24C-BC80-41E1-A04E-B9357C122A74}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FE45911-3EF7-4206-9B62-38E4C8ACA190}
