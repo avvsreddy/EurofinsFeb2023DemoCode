@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace MTDemo8
 {
@@ -34,7 +35,8 @@ namespace MTDemo8
             Stopwatch sw = Stopwatch.StartNew();
             var result = Multiply(m1, m2);
             Console.WriteLine($"Multiplying took {sw.ElapsedMilliseconds} ms");
-
+            Console.WriteLine("Press enter to continue...");
+            Console.ReadLine();
             Console.WriteLine("multiplying the matrix parallelly");
             sw.Restart();
             result = MultiplyParallel(m1, m2);
@@ -57,13 +59,14 @@ namespace MTDemo8
         public static int[,] MultiplyParallel(int[,] m1, int[,] m2)
         {
             int[,] result = new int[ROWS, COL];
-            for (int r = 0; r < ROWS; r++)
+            //for (int r = 0; r < ROWS; r++)
+            Parallel.For(0, ROWS, r =>
             {
                 for (int c = 0; c < COL; c++)
                 {
                     result[r, c] = m1[r, c] * m2[r, c];
                 }
-            }
+            });
             return result;
         }
     }
