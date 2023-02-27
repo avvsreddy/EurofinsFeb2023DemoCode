@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Case Studies\Recommendation Engine - Pearson - Venkat.pdf" />
     <None Include="Labs\Collections\Collection Exercises.pdf" />
     <None Include="Labs\Collections\Computer Kiosk Application Project Requirements.pdf" />
     <None Include="Labs\Delegates\Lab-Delegates.pdf" />
