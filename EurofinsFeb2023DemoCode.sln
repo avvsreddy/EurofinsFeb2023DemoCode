@@ -95,6 +95,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTDemo7", "MTDemo7\MTDemo7.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTDemo8", "MTDemo8\MTDemo8.csproj", "{A03C09FB-10D8-4E07-8EC2-1334517337F2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AI Recommandation Case Study", "AI Recommandation Case Study", "{934D4C9E-8167-4E08-A7B9-14D59B162E98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module1-Core Engine", "Module1-Core Engine", "{20338F02-C01F-4748-B9A3-985024B8BB2C}"
+	ProjectSection(SolutionItems) = preProject
+		E:\Training Materials 2020\OneDrive_1_10-31-2020\S\####Materials and Labs$$$$$$$$\Eurofins April 2019 Batch\Iteration 2\AI Recommandation Engine - Case Study\Step 1 - Recommender.jpg = E:\Training Materials 2020\OneDrive_1_10-31-2020\S\####Materials and Labs$$$$$$$$\Eurofins April 2019 Batch\Iteration 2\AI Recommandation Engine - Case Study\Step 1 - Recommender.jpg
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommandationEngine.CoreRecommandar", "AIRecommandationEngine.CoreRecommandar\AIRecommandationEngine.CoreRecommandar.csproj", "{04B8450A-34B4-4589-A7D9-20EE78BD2DEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -233,6 +242,10 @@ Global
 		{A03C09FB-10D8-4E07-8EC2-1334517337F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A03C09FB-10D8-4E07-8EC2-1334517337F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A03C09FB-10D8-4E07-8EC2-1334517337F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04B8450A-34B4-4589-A7D9-20EE78BD2DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B8450A-34B4-4589-A7D9-20EE78BD2DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B8450A-34B4-4589-A7D9-20EE78BD2DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B8450A-34B4-4589-A7D9-20EE78BD2DEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -273,6 +286,8 @@ Global
 		{8F6B1325-C13A-4298-BF22-43E2607CEF11} = {2536D24C-BC80-41E1-A04E-B9357C122A74}
 		{ACFB58EF-64A9-4574-8BAC-AEC73BC0B3F0} = {2536D24C-BC80-41E1-A04E-B9357C122A74}
 		{A03C09FB-10D8-4E07-8EC2-1334517337F2} = {2536D24C-BC80-41E1-A04E-B9357C122A74}
+		{20338F02-C01F-4748-B9A3-985024B8BB2C} = {934D4C9E-8167-4E08-A7B9-14D59B162E98}
+		{04B8450A-34B4-4589-A7D9-20EE78BD2DEB} = {20338F02-C01F-4748-B9A3-985024B8BB2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FE45911-3EF7-4206-9B62-38E4C8ACA190}
