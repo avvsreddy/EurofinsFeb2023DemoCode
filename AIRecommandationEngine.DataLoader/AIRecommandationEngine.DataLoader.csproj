@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{04B8450A-34B4-4589-A7D9-20EE78BD2DEB}</ProjectGuid>
+    <ProjectGuid>{7C84B5A9-B9C6-41FD-BBFA-6B810C5D1FEA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AIRecommandationEngine.CoreRecommandar</RootNamespace>
-    <AssemblyName>AIRecommandationEngine.CoreRecommandar</AssemblyName>
+    <RootNamespace>AIRecommandationEngine.DataLoader</RootNamespace>
+    <AssemblyName>AIRecommandationEngine.DataLoader</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,12 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IRecommander.cs" />
-    <Compile Include="PearsonCorrelation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Step 1 - Recommender.jpg" />
+    <Content Include="Design\Step 2 - Data Loader.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
