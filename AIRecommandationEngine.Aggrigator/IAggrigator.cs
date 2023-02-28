@@ -7,12 +7,4 @@ namespace AIRecommandationEngine.Aggrigator
     {
         Dictionary<string, List<int>> Aggrigate(BookDetails bookDetails, Preference preference);
     }
-
-    public class RatingsAggrigator : IAggrigator
-    {
-        public Dictionary<string, List<int>> Aggrigate(BookDetails bookDetails, Preference preference)
-        {
-            throw new System.NotImplementedException();
-        }
-    }
 }

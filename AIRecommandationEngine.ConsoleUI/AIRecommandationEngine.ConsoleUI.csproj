@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{37C78BFF-0167-442C-9E91-1CB4D49BD380}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AIRecommandationEngine.Aggrigator</RootNamespace>
-    <AssemblyName>AIRecommandationEngine.Aggrigator</AssemblyName>
+    <ProjectGuid>{12D7FF16-D13C-49B7-959C-0664DC251771}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AIRecommandationEngine.ConsoleUI</RootNamespace>
+    <AssemblyName>AIRecommandationEngine.ConsoleUI</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,18 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IAggrigator.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RatingsAggrigator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Design\Step 3 - Aggregator.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AIRecommandationEngine.Common\AIRecommandationEngine.Common.csproj">
-      <Project>{c096d64e-2cea-41ee-b228-d2d3b7ffe483}</Project>
-      <Name>AIRecommandationEngine.Common</Name>
-    </ProjectReference>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

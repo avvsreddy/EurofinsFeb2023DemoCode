@@ -110,13 +110,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module2-Data Loader", "Modu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommandationEngine.DataLoader", "AIRecommandationEngine.DataLoader\AIRecommandationEngine.DataLoader.csproj", "{7C84B5A9-B9C6-41FD-BBFA-6B810C5D1FEA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module3-Ratints Aggrigator", "Module3-Ratints Aggrigator", "{12654445-B215-4E15-9BC3-D1FB3ECD51AF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module3-Ratings Aggrigator", "Module3-Ratings Aggrigator", "{12654445-B215-4E15-9BC3-D1FB3ECD51AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommandationEngine.Aggrigator", "AIRecommandationEngine.Aggrigator\AIRecommandationEngine.Aggrigator.csproj", "{37C78BFF-0167-442C-9E91-1CB4D49BD380}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Layer", "Common Layer", "{C4F70D36-2A0D-4958-8845-399A9C779F0D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommandationEngine.Common", "AIRecommandationEngine.Common\AIRecommandationEngine.Common.csproj", "{C096D64E-2CEA-41EE-B228-D2D3B7FFE483}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module4-Integrator", "Module4-Integrator", "{2D2BBDA9-6414-42CF-AED4-ACFCFA8007E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommandationEngine.Integrator", "AIRecommandationEngine.Integrator\AIRecommandationEngine.Integrator.csproj", "{BB45BA2A-A9AF-4630-90C2-8F24C8B44AFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module5-ConsoleUI", "Module5-ConsoleUI", "{9AF94C67-1470-44E8-A2E2-B80E5301F022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommandationEngine.ConsoleUI", "AIRecommandationEngine.ConsoleUI\AIRecommandationEngine.ConsoleUI.csproj", "{12D7FF16-D13C-49B7-959C-0664DC251771}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -276,6 +284,14 @@ Global
 		{C096D64E-2CEA-41EE-B228-D2D3B7FFE483}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C096D64E-2CEA-41EE-B228-D2D3B7FFE483}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C096D64E-2CEA-41EE-B228-D2D3B7FFE483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB45BA2A-A9AF-4630-90C2-8F24C8B44AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB45BA2A-A9AF-4630-90C2-8F24C8B44AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB45BA2A-A9AF-4630-90C2-8F24C8B44AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB45BA2A-A9AF-4630-90C2-8F24C8B44AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12D7FF16-D13C-49B7-959C-0664DC251771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D7FF16-D13C-49B7-959C-0664DC251771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D7FF16-D13C-49B7-959C-0664DC251771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D7FF16-D13C-49B7-959C-0664DC251771}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -325,6 +341,10 @@ Global
 		{37C78BFF-0167-442C-9E91-1CB4D49BD380} = {12654445-B215-4E15-9BC3-D1FB3ECD51AF}
 		{C4F70D36-2A0D-4958-8845-399A9C779F0D} = {934D4C9E-8167-4E08-A7B9-14D59B162E98}
 		{C096D64E-2CEA-41EE-B228-D2D3B7FFE483} = {C4F70D36-2A0D-4958-8845-399A9C779F0D}
+		{2D2BBDA9-6414-42CF-AED4-ACFCFA8007E5} = {934D4C9E-8167-4E08-A7B9-14D59B162E98}
+		{BB45BA2A-A9AF-4630-90C2-8F24C8B44AFA} = {2D2BBDA9-6414-42CF-AED4-ACFCFA8007E5}
+		{9AF94C67-1470-44E8-A2E2-B80E5301F022} = {934D4C9E-8167-4E08-A7B9-14D59B162E98}
+		{12D7FF16-D13C-49B7-959C-0664DC251771} = {9AF94C67-1470-44E8-A2E2-B80E5301F022}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FE45911-3EF7-4206-9B62-38E4C8ACA190}
