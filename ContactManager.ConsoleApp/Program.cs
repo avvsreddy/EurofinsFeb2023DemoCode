@@ -9,7 +9,7 @@ namespace ContactManager.ConsoleApp
         {
 
             IContactsRepository repo = new ContactsDBRepository();
-            Contact c = new Contact { ContactID = 1, Name = "Sachin", Email = "sachin@bcci.org", Location = "Mumbai", Phone = "234234234" };
+            Contact c = new Contact { ContactID = 2, Name = "Sachin 2", Email = "sachin@bcci.org", Location = "Mumbai", Phone = "234234234" };
             repo.Save(c);
             System.Console.WriteLine("done");
         }

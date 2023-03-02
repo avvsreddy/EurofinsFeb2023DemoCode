@@ -21,7 +21,28 @@ namespace ContactManagers.DataAccess
 
         public List<Contact> GetAll()
         {
-            throw new NotImplementedException();
+            IDbConnection conn = GetConnection();
+            IDbCommand cmd = conn.CreateCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = "select * from contacts";
+            conn.Open();
+            IDataReader reader = cmd.ExecuteReader();
+            List<Contact> contacts = new List<Contact>();
+            while (reader.Read())
+            {
+                Contact c = new Contact();
+                c.ContactID = (int)reader[0];
+                c.Name = (string)reader[1];
+                c.Phone = (string)reader["phone"];
+                c.Email = reader.GetString(2);
+                c.Location = reader["location"].ToString();
+                contacts.Add(c);
+            }
+            reader.Close();
+            conn.Close();
+            return contacts;
+
+
         }
 
         public Contact GetContact(int id)
@@ -51,6 +72,9 @@ namespace ContactManagers.DataAccess
             p1.ParameterName = "@id";
             p1.Value = c.ContactID;
             cmd.Parameters.Add(p1);
+
+            IDataParameter data;
+
 
             IDbDataParameter p2 = cmd.CreateParameter();
             p2.ParameterName = "@name";
