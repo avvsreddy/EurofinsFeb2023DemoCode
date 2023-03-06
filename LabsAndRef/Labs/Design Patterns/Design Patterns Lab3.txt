@@ -1,0 +1,9 @@
+﻿Design Patterns Lab 3
+
+For a banking system develop “Client Updator” system.
+The bank has provisions for FDA, Housing loan and business loan and it should update the client when there is a change in the rate of interests for these types of loans
+The clients can be of any type and they should register with the service before getting updates
+The client should also have provisions for unregistering from the interests
+Each client be interested in more than one updates
+
+Hint: Use Observer Pattern

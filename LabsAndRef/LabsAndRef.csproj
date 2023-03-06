@@ -72,6 +72,9 @@
     <None Include="Ref\ADO\ADO.NET Reference Manual.pdf" />
     <None Include="Ref\Azure-Quick-Start-for-NET-Developers.pdf" />
     <None Include="Ref\C# Programming Ref Notes and Labs- Venkat.pdf" />
+    <None Include="Ref\Design Patterns\Application Architecture Guidelines - Venkat.pdf" />
+    <None Include="Ref\Design Patterns\Head First Design Patterns.pdf" />
+    <None Include="Ref\Design Patterns\Head First OOAD.pdf" />
     <None Include="Ref\Exception Handling - Ref.pdf" />
     <None Include="Ref\Introduction to dotNET Framework.pdf" />
     <None Include="Ref\IO and Serialization.pdf" />
@@ -83,6 +86,9 @@
     <None Include="Training Calendar\SkillAssure - Fresher Induction .NET- Program Design_v1.1 -  Feb 2023.xlsx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Labs\Design Patterns\Design Patterns Lab1.txt" />
+    <Content Include="Labs\Design Patterns\Design Patterns Lab2.txt" />
+    <Content Include="Labs\Design Patterns\Design Patterns Lab3.txt" />
     <Content Include="Labs\Exceptions\BankAppProblem.txt" />
     <Content Include="Labs\File IO\File IO Lab.txt" />
     <Content Include="Labs\File IO\names.txt" />

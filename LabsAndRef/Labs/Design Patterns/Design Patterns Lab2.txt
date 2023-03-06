@@ -1,0 +1,9 @@
+﻿Design Patterns Lab 2
+-------------------------------------
+
+For a shopping cart system, develop the cost calculator
+The cashier can add a Discount to the sale without prior notification.
+The cashier can even deduct a Rs 50 from the sale as a consequence of purchasing bulk orders on a vacation day.
+And similarly there can be any new discounts or amendments to sale in the future is possible.
+
+Hint: Use Decorator Pattern

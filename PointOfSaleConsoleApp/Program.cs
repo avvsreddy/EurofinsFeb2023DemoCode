@@ -7,16 +7,38 @@ namespace PointOfSaleConsoleApp
     {
         static void Main(string[] args)
         {
-            //ITaxCalculator tax = new TNTaxCalculator();
+            ITaxCalculator tax = new TNTaxCalculator();
             BillingSystem billingSystem = new BillingSystem();
             billingSystem.GenerateBill();
+
+            //CalculatorFactory f1 = CalculatorFactory.Instance;
+            //Console.WriteLine($"f1: {f1.GetHashCode()}");
+            //CalculatorFactory f2 = CalculatorFactory.Instance;
+            //Console.WriteLine($"f2: {f2.GetHashCode()}");
+
         }
     }
 
 
     public class CalculatorFactory
     {
-        public ITaxCalculator CreateTaxCalculator()
+
+        private CalculatorFactory()
+        {
+
+        }
+
+        //private static CalculatorFactory instance = null;
+
+        public static readonly CalculatorFactory Instance = new CalculatorFactory();
+        //public static CalculatorFactory GetInstance()
+        //{
+        //    if (instance == null)
+        //        instance = new CalculatorFactory();
+        //    return instance;
+        //}
+
+        public virtual ITaxCalculator CreateTaxCalculator()
         {
             // read the config file
             string calculatorClassName = ConfigurationManager.AppSettings["TAXCALC"];
@@ -50,8 +72,8 @@ namespace PointOfSaleConsoleApp
             // offers
             // tax calculation
             //ITaxCalculator taxCalc = new TNTaxCalculator();
-            CalculatorFactory factory = new CalculatorFactory();
-            ITaxCalculator taxCalc = factory.CreateTaxCalculator();
+            //CalculatorFactory factory = CalculatorFactory.GetInstance();
+            ITaxCalculator taxCalc = CalculatorFactory.Instance.CreateTaxCalculator();
             double tax = taxCalc.CalculateTax(amount);
             // print bill
             double totAmt = amount - discount + tax;
@@ -95,4 +117,26 @@ namespace PointOfSaleConsoleApp
     }
 
 
+    class USTaxClaculator
+    {
+        public float ComputeTax(float amount)
+        {
+            //sdfsdfsdf
+            //asdfsdfsd
+            //sdfsdfsdf
+            //sdfsdfsd
+            Console.WriteLine("Using US Tax Calculator");
+            return 124f;
+        }
+    }
+
+
+    class USTaxClaculatorAdapter : ITaxCalculator
+    {
+        public double CalculateTax(double amount)
+        {
+            USTaxClaculator calc = new USTaxClaculator();
+            return calc.ComputeTax((float)amount);
+        }
+    }
 }
