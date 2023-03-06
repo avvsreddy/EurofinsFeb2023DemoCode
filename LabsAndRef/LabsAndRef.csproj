@@ -49,6 +49,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Case Studies\Recommendation Engine - Pearson - Venkat.pdf" />
+    <None Include="Labs\ADO\Week-End-Lab-MovieApp_V1.pdf" />
     <None Include="Labs\Collections\Collection Exercises.pdf" />
     <None Include="Labs\Collections\Computer Kiosk Application Project Requirements.pdf" />
     <None Include="Labs\Delegates\Lab-Delegates.pdf" />
@@ -67,6 +68,8 @@
     <None Include="Labs\PLT\PLT_ProgramsSolutions.pdf" />
     <None Include="Labs\Threads\Spell Checker - Multi Threading Case Study.pdf" />
     <None Include="Project\Online Dispatch Management Tool.zip" />
+    <None Include="Ref\ADO\ADO.NET Ref.pdf" />
+    <None Include="Ref\ADO\ADO.NET Reference Manual.pdf" />
     <None Include="Ref\Azure-Quick-Start-for-NET-Developers.pdf" />
     <None Include="Ref\C# Programming Ref Notes and Labs- Venkat.pdf" />
     <None Include="Ref\Exception Handling - Ref.pdf" />
@@ -90,8 +93,6 @@
     <Content Include="Labs\Unit Testing\BankAppProblem.txt" />
     <Content Include="Labs\Unit Testing\Step 1 - Recommender.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ref\ADO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

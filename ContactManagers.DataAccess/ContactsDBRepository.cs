@@ -24,7 +24,9 @@ namespace ContactManagers.DataAccess
             IDbConnection conn = GetConnection();
             IDbCommand cmd = conn.CreateCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "select * from contacts";
+            //cmd.CommandText = "select * from contacts";
+            cmd.CommandText = "sp_GetAllContacts";
+            cmd.CommandType = CommandType.StoredProcedure;
             conn.Open();
             IDataReader reader = cmd.ExecuteReader();
             List<Contact> contacts = new List<Contact>();
