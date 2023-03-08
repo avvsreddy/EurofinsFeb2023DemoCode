@@ -55,14 +55,31 @@
   <ItemGroup>
     <Compile Include="DataAccess\ProductsDbContext.cs" />
     <Compile Include="Entities\Product.cs" />
+    <Compile Include="Migrations\202303080510290_InitialCreate.cs" />
+    <Compile Include="Migrations\202303080510290_InitialCreate.designer.cs">
+      <DependentUpon>202303080510290_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303080847020_BrandAdded.cs" />
+    <Compile Include="Migrations\202303080847020_BrandAdded.designer.cs">
+      <DependentUpon>202303080847020_BrandAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Entities\ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202303080510290_InitialCreate.resx">
+      <DependentUpon>202303080510290_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303080847020_BrandAdded.resx">
+      <DependentUpon>202303080847020_BrandAdded.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

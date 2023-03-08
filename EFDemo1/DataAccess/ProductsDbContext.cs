@@ -16,6 +16,7 @@ namespace EFDemo1.DataAccess
         // configure tables
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Catagory> Catagories { get; set; }
 
     }
 }

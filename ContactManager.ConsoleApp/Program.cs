@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ContactManagers.DataAccess;
+using ContactManagers.DataAccess.EFDataAccess;
+using System;
 using System.Configuration;
 using System.Data.SqlClient;
 
@@ -9,17 +11,11 @@ namespace ContactManager.ConsoleApp
         static void Main(string[] args)
         {
 
-            Program p = new Program();
-            try
-            {
-                bool isDone = p.TransferFunds(111, 222, 1000);
-                if (isDone)
-                    System.Console.WriteLine("Fund Transfer done....");
-            }
-            catch (Exception ex)
-            {
-                System.Console.WriteLine(ex.Message);
-            }
+            IContactsRepository repo = new ContactsEFRepository();
+            var c = repo.GetContact(1);
+            c.Name = "Modified";
+
+            repo.Edit(1, c);
         }
 
         public bool TransferFunds(int fromAcc, int toAcc, int amount)
