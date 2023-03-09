@@ -7,7 +7,6 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            ContextKey = "EFDemo1.DataAccess.ProductsDbContext";
             AutomaticMigrationDataLossAllowed = true;
         }
 

@@ -9,7 +9,56 @@ namespace EFDemo1
     {
         static void Main(string[] args)
         {
+            ProductsDbContext db = new ProductsDbContext();
+            db.Database.Log = Console.WriteLine;
 
+            //var plist = db.Products.ToList();
+            //foreach (var item in plist)
+            //{
+            //    item.Rate += 1000;
+            //}
+            //db.SaveChanges();
+
+            string sqlUpdate = "update products set rate = rate + 1000";
+            db.Database.ExecuteSqlCommand(sqlUpdate);
+            Console.WriteLine("done");
+        }
+
+        private static void AddCustomerSuppliers()
+        {
+            ProductsDbContext db = new ProductsDbContext();
+            db.Database.Log = Console.WriteLine;
+            // add new customer
+            var c = new Customer { Name = "Customer 1", CustomerType = "Gold", Discount = 12, Email = "customer1@mail.com", Location = "location 1", Mobile = "23434234" };
+
+            db.People.Add(c);
+
+
+            // add new supplier
+
+            var s = new Supplier { Name = "Supplier 1", GST = "424BSDF234", Rating = 8 };
+            db.People.Add(s);
+
+            db.SaveChanges();
+        }
+
+        private static void NewMethod1()
+        {
+            // get all products belongs to mobile catagory
+            ProductsDbContext db = new ProductsDbContext();
+            db.Database.Log = Console.WriteLine;
+            var allMobiles = (from c in db.Catagories
+                              where c.Name == "Mobiles"
+                              select c.Products).FirstOrDefault();
+
+            foreach (var item in allMobiles)
+            {
+                Console.WriteLine(item.Name);
+            }
+        }
+
+        private static void display1()
+        {
             // display product name, rate and catagory name
             ProductsDbContext db = new ProductsDbContext();
             db.Database.Log = Console.WriteLine;
@@ -21,8 +70,6 @@ namespace EFDemo1
             {
                 Console.WriteLine($"{item.Name}\t{item.Rate}\t{item.Catagory.Name}");
             }
-
-
         }
 
         private static void NewProductWithExistingCatagory()
