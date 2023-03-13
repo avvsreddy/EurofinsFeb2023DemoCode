@@ -16,8 +16,9 @@ namespace EFDemo1
             //foreach (var item in plist)
             //{
             //    item.Rate += 1000;
-            //}
             //db.SaveChanges();
+            //}
+            db.SaveChanges();
 
             string sqlUpdate = "update products set rate = rate + 1000";
             db.Database.ExecuteSqlCommand(sqlUpdate);
