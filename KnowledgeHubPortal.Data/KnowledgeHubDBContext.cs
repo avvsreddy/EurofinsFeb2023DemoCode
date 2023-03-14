@@ -8,5 +8,6 @@ namespace KnowledgeHubPortal.Data
         public KnowledgeHubDBContext() : base("name=DefaultConnection") { }
 
         public DbSet<Catagory> Catagories { get; set; }
+        public DbSet<Article> Articles { get; set; }
     }
 }

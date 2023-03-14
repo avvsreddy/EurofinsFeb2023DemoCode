@@ -42,9 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArticlesManager.cs" />
     <Compile Include="CatagoryManager.cs" />
+    <Compile Include="Data\IArticlesRepository.cs" />
     <Compile Include="Data\ICatagoryRepository.cs" />
+    <Compile Include="Entities\Article.cs" />
     <Compile Include="Entities\Catagory.cs" />
+    <Compile Include="IArticlesManager.cs" />
     <Compile Include="ICatagoriesManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

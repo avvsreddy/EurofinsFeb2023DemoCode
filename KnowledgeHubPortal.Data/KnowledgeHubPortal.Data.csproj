@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArticlesRepository.cs" />
     <Compile Include="CatagoryRepository.cs" />
     <Compile Include="KnowledgeHubDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
