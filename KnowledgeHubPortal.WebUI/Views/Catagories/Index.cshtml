@@ -1,0 +1,35 @@
+﻿@model List<KnowledgeHubPortal.Domain.Entities.Catagory> 
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h3>@TempData["Message"]</h3>
+
+<h2>Manage Catagories</h2>
+
+<a href="Catagories/Create" class="btn btn-primary">Create Catagory</a>
+
+<table class="table table-bordered table-striped table-hover" >
+    <tr>
+        <th>Catagory ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CatagoryId</td>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+            <td>
+                <a href="/Catagories/Edit/@item.CatagoryId" class="btn btn-success">Edit</a> | 
+                <a href="/Catagories/Delete/@item.CatagoryId" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    }
+
+
+</table>

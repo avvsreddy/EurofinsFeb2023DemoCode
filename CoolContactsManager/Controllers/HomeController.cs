@@ -1,11 +1,13 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
 
-namespace KnowledgeHubPortal.WebUI.Controllers
+namespace CoolContactsManager.Controllers
 {
     public class HomeController : Controller
     {
-
-        // URL: http://domainname.com
         public ActionResult Index()
         {
             return View();
@@ -24,15 +26,5 @@ namespace KnowledgeHubPortal.WebUI.Controllers
 
             return View();
         }
-        // /Home/Hello
-        public ActionResult Hello()
-        {
-            string greeting = "Hello, Welcome to MVC";
-            ViewBag.Message = greeting; // 
-            //ViewData["Message"] = greeting;
-            //TempData["Message"] = greeting;
-            return View();
-        }
-
     }
 }

@@ -168,6 +168,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowledgeHubPortal.Domain",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowledgeHubPortal.WebUI", "KnowledgeHubPortal.WebUI\KnowledgeHubPortal.WebUI.csproj", "{80D4B097-A874-4372-88CC-3AABE7B5D212}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolContactsManager", "CoolContactsManager\CoolContactsManager.csproj", "{5C9F347C-B692-44C0-88A9-570E3E4D9637}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -382,6 +384,10 @@ Global
 		{80D4B097-A874-4372-88CC-3AABE7B5D212}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80D4B097-A874-4372-88CC-3AABE7B5D212}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80D4B097-A874-4372-88CC-3AABE7B5D212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C9F347C-B692-44C0-88A9-570E3E4D9637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9F347C-B692-44C0-88A9-570E3E4D9637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9F347C-B692-44C0-88A9-570E3E4D9637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9F347C-B692-44C0-88A9-570E3E4D9637}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -452,6 +458,7 @@ Global
 		{811B889C-D249-4E09-A695-CA5F24F12AE6} = {0F0C160D-2D7A-42B4-8CBD-C14DC9C5712C}
 		{42E6933C-31D6-4237-8FA2-7CE2F9DDFD5A} = {2E313F43-4C69-4604-B1FB-24258068C04E}
 		{80D4B097-A874-4372-88CC-3AABE7B5D212} = {04D4CBC5-BDBA-4717-8555-EA2AC08EF8F8}
+		{5C9F347C-B692-44C0-88A9-570E3E4D9637} = {166994CC-04AA-4656-92AB-A2CAED234F33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FE45911-3EF7-4206-9B62-38E4C8ACA190}
