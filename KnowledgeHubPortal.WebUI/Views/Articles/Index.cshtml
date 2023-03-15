@@ -1,0 +1,52 @@
+﻿@model IEnumerable<KnowledgeHubPortal.WebUI.Models.ArticlesForBrowseViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Articles List</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CatagoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Submiter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WhenSubmited)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <a href="@item.Url" target="_blank">@item.Title</a>
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CatagoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Submiter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WhenSubmited)
+        </td>
+       
+    </tr>
+}
+
+</table>

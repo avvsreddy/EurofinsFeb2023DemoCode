@@ -16,7 +16,7 @@ namespace KnowledgeHubPortal.Domain.Entities
         [MaxLength(500)]
         public string Description { get; set; }
         public int CatagoryId { get; set; }
-        public Catagory Catagory { get; set; }
+        public virtual Catagory Catagory { get; set; }
         public string Submiter { get; set; }
 
         public bool IsApproved { get; set; }
