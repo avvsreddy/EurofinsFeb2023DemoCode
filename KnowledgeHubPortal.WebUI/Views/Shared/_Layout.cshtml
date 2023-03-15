@@ -24,9 +24,18 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-
-                    <li>@Html.ActionLink("Manage Catagories", "Index", "Catagories")</li>
                     <li>@Html.ActionLink("Browse Articles", "Index", "Articles")</li>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Submit Articles", "Submit", "Articles")</li>
+                    }
+
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
+                    {
+                    <li>@Html.ActionLink("Manage Catagories", "Index", "Catagories")</li>
+                    <li>@Html.ActionLink("Review Articles", "ReviewArticles", "Articles")</li>
+                    }
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

@@ -1,7 +1,9 @@
 ﻿using KnowledgeHubPortal.Domain.Data;
 using KnowledgeHubPortal.Domain.Entities;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace KnowledgeHubPortal.Data
 {
@@ -26,10 +28,17 @@ namespace KnowledgeHubPortal.Data
             return db.Articles.Where(a => a.IsApproved).ToList();
         }
 
+        public async Task<List<Article>> GetArticlesForBrowseAsync()
+        {
+            return await db.Articles.Where(a => a.IsApproved).ToListAsync();
+        }
+
         public List<Article> GetArticlesForBrowseByCatagory(int catagoryId)
         {
             return db.Articles.Where(a => a.IsApproved && a.CatagoryId == catagoryId).ToList();
         }
+
+
 
         public List<Article> GetArticlesForReview()
         {

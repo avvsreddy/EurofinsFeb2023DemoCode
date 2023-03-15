@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace KnowledgeHubPortal.WebUI.Controllers
 {
@@ -10,15 +12,14 @@ namespace KnowledgeHubPortal.WebUI.Controllers
         {
             return View();
         }
-
+        [OutputCache(Duration = 60, VaryByParam = "*", Location = System.Web.UI.OutputCacheLocation.Any)]
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
+            ViewBag.Message = DateTime.Now;
             return View();
         }
 
-        public ActionResult Contact()
+        public async Task<ActionResult> Contact()
         {
             ViewBag.Message = "Your contact page.";
 
@@ -33,6 +34,7 @@ namespace KnowledgeHubPortal.WebUI.Controllers
             //TempData["Message"] = greeting;
             return View();
         }
+
 
     }
 }

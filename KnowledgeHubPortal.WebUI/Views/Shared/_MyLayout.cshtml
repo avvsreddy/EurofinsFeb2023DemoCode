@@ -8,16 +8,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Hello</title>
-
-   @Scripts.Render("~/myscripts")
-
-    @Styles.Render("~/mystyles")
-
+    <title>_MyLayout</title>
 </head>
 <body>
     <div> 
-        <h1>This is Hello View</h1>
+        <h1>This is header</h1>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <div>
+        <h3>This is footer</h3>
     </div>
 </body>
 </html>

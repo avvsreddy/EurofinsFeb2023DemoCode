@@ -1,0 +1,64 @@
+﻿@model IEnumerable<KnowledgeHubPortal.WebUI.Models.ReviewArticleViewModel>
+
+@{
+    ViewBag.Title = "ReviewArticles";
+}
+
+<h2>Review Articles</h2>
+
+<h3>@TempData["Message"]</h3>
+
+
+
+
+<form method="post">
+    <table class="table">
+        <tr>
+            <th>
+                Select
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Catagory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Submiter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WhenSubmited)
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <input type="checkbox" name="articlIds" value="@item.Id" />
+                </td>
+                <td>
+                    <a href="@item.Url">@item.Title</a>
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Catagory)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Submiter)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WhenSubmited)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+
+    <input type="submit" formaction="Approve" name="btnApprove" value="Approve" class="btn btn-info" />
+    <input type="submit" formaction="Reject" name="btnReject" value="Reject" class="btn btn-danger" />
+
+</form>

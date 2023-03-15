@@ -1,21 +1,26 @@
-﻿using KnowledgeHubPortal.Data;
-using KnowledgeHubPortal.Domain;
+﻿using KnowledgeHubPortal.Domain;
 using KnowledgeHubPortal.Domain.Entities;
 using System.Web.Mvc;
 
 namespace KnowledgeHubPortal.WebUI.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class CatagoriesController : Controller
     {
         // GET: Catagories
 
-        private Domain.Data.ICatagoryRepository repo = null;
-        private CatagoryManager mgr = null;
+        //private Domain.Data.ICatagoryRepository repo = null;
+        private ICatagoriesManager mgr = null;
 
-        public CatagoriesController()
+        //public CatagoriesController()
+        //{
+        //    repo = new CatagoryRepository();
+        //    mgr = new CatagoryManager(repo);
+        //}
+
+        public CatagoriesController(ICatagoriesManager mgr)
         {
-            repo = new CatagoryRepository();
-            mgr = new CatagoryManager(repo);
+            this.mgr = mgr;
         }
         public ActionResult Index()
         {
@@ -25,6 +30,7 @@ namespace KnowledgeHubPortal.WebUI.Controllers
 
         // .../catagories/create
         [HttpGet]
+        //[AllowAnonymous]
         public ActionResult Create()
         {
             return View();
