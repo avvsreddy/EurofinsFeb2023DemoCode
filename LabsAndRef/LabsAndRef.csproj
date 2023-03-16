@@ -75,9 +75,11 @@
     <None Include="Labs\PLT\PLT_Programs.pdf" />
     <None Include="Labs\PLT\PLT_ProgramsSolutions.pdf" />
     <None Include="Labs\Threads\Spell Checker - Multi Threading Case Study.pdf" />
+    <None Include="Labs\Web API\01-WebAPI Lab - TruYum API Service.pdf" />
     <None Include="Project\Online Dispatch Management Tool.zip" />
     <None Include="Ref\ADO\ADO.NET Ref.pdf" />
     <None Include="Ref\ADO\ADO.NET Reference Manual.pdf" />
+    <None Include="Ref\API\WebAPI Ref.zip" />
     <None Include="Ref\Azure-Quick-Start-for-NET-Developers.pdf" />
     <None Include="Ref\C# Programming Ref Notes and Labs- Venkat.pdf" />
     <None Include="Ref\Design Patterns\Application Architecture Guidelines - Venkat.pdf" />
