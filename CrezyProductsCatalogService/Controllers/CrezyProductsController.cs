@@ -1,8 +1,7 @@
 ﻿using CrezyProductsCatalogService.Models.Data;
-using CrezyProductsCatalogService.Models.DomainModels;
-using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.OData;
 using System.Web.Routing;
 
 namespace CrezyProductsCatalogService.Controllers
@@ -18,12 +17,16 @@ namespace CrezyProductsCatalogService.Controllers
         // Action: GET
         // URI: GET .../api/CrezyProdcuts
         //[HttpGet]
-        public List<CrezyProduct> GetProducts()
+        [EnableQuery]
+        public IHttpActionResult GetProducts()
         {
             // get the products from back-end
-            return db.CrezyProducts.ToList();
+            return Ok(db.CrezyProducts.AsQueryable());
             // return the products
         }
+
+        #region other get end points
+
         // GET .../api/crezyproduts/1
         public IHttpActionResult GetCrezyProduct(int id)
         {
@@ -116,5 +119,7 @@ namespace CrezyProductsCatalogService.Controllers
             // if found return data + status code 200
             return Ok(products);
         }
+
+        #endregion
     }
 }
