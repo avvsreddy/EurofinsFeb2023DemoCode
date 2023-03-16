@@ -170,6 +170,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowledgeHubPortal.WebUI", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolContactsManager", "CoolContactsManager\CoolContactsManager.csproj", "{5C9F347C-B692-44C0-88A9-570E3E4D9637}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web API Demos", "Web API Demos", "{E12D44B6-FE17-4510-85CF-95E4A6D52A84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrezyProductsCatalogService", "CrezyProductsCatalogService\CrezyProductsCatalogService.csproj", "{D782755A-1E05-4FDE-905E-4635A469493F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -388,6 +392,10 @@ Global
 		{5C9F347C-B692-44C0-88A9-570E3E4D9637}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C9F347C-B692-44C0-88A9-570E3E4D9637}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C9F347C-B692-44C0-88A9-570E3E4D9637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D782755A-1E05-4FDE-905E-4635A469493F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D782755A-1E05-4FDE-905E-4635A469493F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D782755A-1E05-4FDE-905E-4635A469493F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D782755A-1E05-4FDE-905E-4635A469493F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -459,6 +467,7 @@ Global
 		{42E6933C-31D6-4237-8FA2-7CE2F9DDFD5A} = {2E313F43-4C69-4604-B1FB-24258068C04E}
 		{80D4B097-A874-4372-88CC-3AABE7B5D212} = {04D4CBC5-BDBA-4717-8555-EA2AC08EF8F8}
 		{5C9F347C-B692-44C0-88A9-570E3E4D9637} = {166994CC-04AA-4656-92AB-A2CAED234F33}
+		{D782755A-1E05-4FDE-905E-4635A469493F} = {E12D44B6-FE17-4510-85CF-95E4A6D52A84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FE45911-3EF7-4206-9B62-38E4C8ACA190}
